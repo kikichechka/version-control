@@ -1,4 +1,4 @@
-package Lesson;
+package lesson1;
 
 public class MeatProducts extends Product {
     private String composition;

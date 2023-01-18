@@ -1,4 +1,4 @@
-package Lesson;
+package lesson1;
 
 public class Sweets extends Product{
     String manufacturer;

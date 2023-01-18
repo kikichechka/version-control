@@ -1,4 +1,4 @@
-package Lesson;
+package lesson1;
 
 public class DairyProduce extends Product {
     private Double fatPercentage;
