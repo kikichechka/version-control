@@ -1,0 +1,3 @@
+1:kate:malaya:1234567
+2:nikita:malyi:3456123
+3:arina:malaya:2398065
