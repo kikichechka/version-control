@@ -1,5 +1,4 @@
 package lesson6.model;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -9,16 +8,11 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FileOperationImpl implements FileOperation {
+public class FileNoteOperationImpl implements FileNoteOperable {
     private String fileName;
 
-    public FileOperationImpl(String fileName) {
+    public FileNoteOperationImpl(String fileName) {
         this.fileName = fileName;
-        // try (FileWriter writer = new FileWriter(fileName, true)) {
-        // writer.flush();
-        // } catch (IOException ex) {
-        // System.out.println(ex.getMessage());
-        // }
     }
 
     @Override
@@ -59,17 +53,4 @@ public class FileOperationImpl implements FileOperation {
             System.out.println(ex.getMessage());
         }
     }
-
-    @Override
-    public void readNote(List<String> lines) {
-        // TODO Auto-generated method stub
-
-    }
-
-    @Override
-    public void deleteNote(List<String> lines) {
-        // TODO Auto-generated method stub
-
-    }
-
 }
