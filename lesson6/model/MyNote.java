@@ -1,11 +1,11 @@
 package lesson6.model;
 
-public class Note {
+public class MyNote {
     private int id;
     private String headingOfTheNote;
     private String textOfTheNote;
 
-    public Note(int id, String headingOfTheNote, String textOfTheNote) {
+    public MyNote(int id, String headingOfTheNote, String textOfTheNote) {
         this.id = id;
         this.headingOfTheNote = headingOfTheNote;
         this.textOfTheNote = textOfTheNote;
@@ -15,11 +15,11 @@ public class Note {
         return id;
     }
 
-    public String getHeadingOfTheNote() {
+    public String getTitle() {
         return headingOfTheNote;
     }
 
-    public String getTextOfTheNote() {
+    public String getText() {
         return textOfTheNote;
     }
 
@@ -37,6 +37,6 @@ public class Note {
 
     @Override
     public String toString() {
-        return String.format(" Заметка №%s\n **%s**\n %s\n -----------------", getId(), getHeadingOfTheNote(), getTextOfTheNote());
+        return String.format(" Заметка №%s\n **%s**\n %s\n -----------------", getId(), getTitle(), getText());
     }
 }

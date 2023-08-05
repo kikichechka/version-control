@@ -1,6 +1,6 @@
 package lesson6.model;
 
 public interface NoteMapperable {
-    public String mapToString(Note note);
-    public Note mapToNote(String line);
+    public String mapToString(MyNote note);
+    public MyNote mapToNote(String line);
 }

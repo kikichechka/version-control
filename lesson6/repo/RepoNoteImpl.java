@@ -2,7 +2,7 @@ package lesson6.repo;
 import java.util.ArrayList;
 import java.util.List;
 import lesson6.model.FileNoteOperable;
-import lesson6.model.Note;
+import lesson6.model.MyNote;
 import lesson6.model.NoteMapper;
 import lesson6.model.NoteMapperable;
 
@@ -16,8 +16,8 @@ public class RepoNoteImpl implements RepoNote {
     }
 
     @Override
-    public List<Note> getAllNotes() {
-        List<Note> listNotes = new ArrayList<>();
+    public List<MyNote> getAllNotes() {
+        List<MyNote> listNotes = new ArrayList<>();
         List<String> listStrings = fileOperation.readAllLines();
         for (String string : listStrings) {
             listNotes.add(noteMapper.mapToNote(string));
@@ -26,9 +26,9 @@ public class RepoNoteImpl implements RepoNote {
     }
 
     @Override
-    public void allChangeNote(List<Note> list) {
+    public void allChangeNote(List<MyNote> list) {
         List<String> listString = new ArrayList<>();
-        for (Note note : list) {
+        for (MyNote note : list) {
             listString.add(noteMapper.mapToString(note));
         }
         fileOperation.saveAllLines(listString);

@@ -3,13 +3,13 @@ package lesson6.model;
 public class NoteMapper implements NoteMapperable {
 
     @Override
-    public String mapToString(Note note) {
-        return String.format("%s|%s|%s", note.getId(), note.getHeadingOfTheNote(), note.getTextOfTheNote());
+    public String mapToString(MyNote note) {
+        return String.format("%s|%s|%s", note.getId(), note.getTitle(), note.getText());
     }
 
     @Override
-    public Note mapToNote(String line) {
+    public MyNote mapToNote(String line) {
         String[] lines = line.split("\\|");
-        return new Note(Integer.parseInt(lines[0]), lines[1], lines[2]);
+        return new MyNote(Integer.parseInt(lines[0]), lines[1], lines[2]);
     }
 }

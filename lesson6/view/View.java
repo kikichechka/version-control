@@ -3,7 +3,7 @@ import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 import lesson6.controller.MyController;
-import lesson6.model.Note;
+import lesson6.model.MyNote;
 
 public class View {
     private MyController myController;
@@ -126,11 +126,11 @@ public class View {
     }
 
     private void showListNotes() {
-        List<Note> list = myController.listNotes();
+        List<MyNote> list = myController.listNotes();
         if (list.size() == 0) {
             System.out.println("Список заметок пуст! Создайте заметку.");
         } else {
-            for (Note note : list) {
+            for (MyNote note : list) {
                 System.out.println(note);
             }
         }
