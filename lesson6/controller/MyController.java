@@ -4,11 +4,11 @@ import lesson6.model.Note;
 import lesson6.repo.RepoLogg;
 import lesson6.repo.RepoNote;
 
-public class Controller {
+public class MyController {
     private final RepoNote repoNote;
     private final RepoLogg repoLogg;
 
-    public Controller(RepoNote repoNote, RepoLogg repoLogg) {
+    public MyController(RepoNote repoNote, RepoLogg repoLogg) {
         this.repoNote = repoNote;
         this.repoLogg = repoLogg;
     }

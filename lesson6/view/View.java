@@ -2,14 +2,14 @@ package lesson6.view;
 import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
-import lesson6.controller.Controller;
+import lesson6.controller.MyController;
 import lesson6.model.Note;
 
 public class View {
-    private Controller myController;
+    private MyController myController;
     Scanner sc;
 
-    public View(Controller controller) {
+    public View(MyController controller) {
         this.myController = controller;
     }
 

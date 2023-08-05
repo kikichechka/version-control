@@ -1,5 +1,5 @@
 package lesson6;
-import lesson6.controller.Controller;
+import lesson6.controller.MyController;
 import lesson6.log.MyDecorator;
 import lesson6.log.MyDecoratorImpl;
 import lesson6.model.FileNoteOperable;
@@ -16,7 +16,7 @@ public class Main {
         MyDecorator myDecorator = new MyDecoratorImpl("logg.txt");
         RepoNote repoNote = new RepoNoteImpl(fileOperation);
         RepoLogg repoLogg = new RepoLoggImpl(myDecorator);
-        Controller controller = new Controller(repoNote, repoLogg);
+        MyController controller = new MyController(repoNote, repoLogg);
         View view = new View(controller);
         view.run();
     }
