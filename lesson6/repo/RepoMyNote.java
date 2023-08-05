@@ -4,7 +4,7 @@ import java.util.List;
 
 import lesson6.model.MyNote;
 
-public interface RepoNote {
+public interface RepoMyNote {
     List<MyNote> getAllNotes();
     void allChangeNote(List<MyNote> list);
 }

@@ -6,11 +6,11 @@ import lesson6.model.MyNote;
 import lesson6.model.NoteMapper;
 import lesson6.model.NoteMapperable;
 
-public class RepoNoteImpl implements RepoNote {
+public class RepoMyNoteImpl implements RepoMyNote {
     private NoteMapperable noteMapper;
     private FileNoteOperable fileOperation;
 
-    public RepoNoteImpl(FileNoteOperable fileOperation) {
+    public RepoMyNoteImpl(FileNoteOperable fileOperation) {
         this.fileOperation = fileOperation;
         noteMapper = new NoteMapper();
     }

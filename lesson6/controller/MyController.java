@@ -2,13 +2,13 @@ package lesson6.controller;
 import java.util.List;
 import lesson6.model.MyNote;
 import lesson6.repo.RepoLogg;
-import lesson6.repo.RepoNote;
+import lesson6.repo.RepoMyNote;
 
 public class MyController {
-    private final RepoNote repoNote;
+    private final RepoMyNote repoNote;
     private final RepoLogg repoLogg;
 
-    public MyController(RepoNote repoNote, RepoLogg repoLogg) {
+    public MyController(RepoMyNote repoNote, RepoLogg repoLogg) {
         this.repoNote = repoNote;
         this.repoLogg = repoLogg;
     }
